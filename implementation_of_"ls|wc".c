@@ -22,7 +22,7 @@ EMAIL-rajachawla778@gmail.com
 int main(){
    
   int a[2];  // array of 2 size a[0] is for reading and a[1] is for writing over a pipe
-  
+  pipe(a); //  using pipe for inter process communication
  if(!fork())
 	{
 				close(1); // closing normal stdout 
